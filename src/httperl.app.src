@@ -1,0 +1,8 @@
+{application, httperl, [
+  {description, "http library"},
+  {vsn, "0.1.0"},
+  {applications, [
+    kernel,
+    stdlib
+  ]}
+]}.
