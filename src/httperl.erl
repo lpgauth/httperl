@@ -1,6 +1,8 @@
 -module(httperl).
 
 -export([
+    % parse_request/1,
+    parse_response/1,
     parse_uri/1
 ]).
 
@@ -21,10 +23,18 @@
 }.
 
 %% public
+%% TODO: specs
+% parse_request(_) ->
+%     ?NOT_LOADED.
+
+% TODO: specs
+parse_response(_) ->
+    ?NOT_LOADED.
+
 -spec parse_uri(string()) ->
     {ok, parsed_uri()} | {error, invalid_uri}.
 
-parse_uri(_N) ->
+parse_uri(_) ->
     ?NOT_LOADED.
 
 %% internal
